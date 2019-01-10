@@ -1,59 +1,86 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link href="bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="styles.css" rel="stylesheet" type="text/css">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="scripts.js"></script>
-    <title>Pig Dice Game</title>
-  </head>
-  <body>
-      <p id="temo"></p>
-  
-   <div class="start-menu container">
-      <div class="jumbotron">
-        <h3>HEY WANNA PLAY Pig Dice !!! <br> ENTER PLAYERS'NAMES & START GAME</h3>
-          <form id="player-1">
-            <div class="form-group">
-              <label for="player1Name">Player 1 Name:</label>
-              <input required class="player1Name form-control" type="text">
-            </div>
-          </form>
-          <form id="player-2">
-            <div class="form-group">
-              <label for="player2Name">Player 2 Name:</label>
-              <input required class="player2Name form-control" type="text">
-            </div>
-          </form>
-          <button id="start" class="btn-info btn">Start</button>
-      </div>
-    </div>
+  <html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="bootstrap.css" rel="stylesheet" type="text/css" media="screen">
+      <link rel="icon" type="image/ico" href="images/title-icon.png">
+      <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+      <link href="styles.css" rel="stylesheet" type="text/css">
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+      <script type="text/javascript" src="bootstrap.js"></script>
+      <script src="scripts.js"></script>
+      <title>pig-dice-game</title>
+    </head>
+    <body>
+     <div class="container">
+       <div class="jumbotron">
+         <h2>The<img src="https://nignanthomas.github.io/pig-dice/images/dancing-pig.gif" alt="Dancing Pig">dice game</h2>
+         <p>welcome to the PIG DICE GAME </p>
+         <button id="help" class="btn bg-warning" type="button" name="button">? - Help</button>
+       </div>
+       <div class="login">
+         <h5>Opponnents, enter your respective names:</h5>
+         <form class="opponnents">
+           <div class="row">
+             <div class="col-md-3">
 
-    <div class="player-console container">
-        <button id="new-game" class="btn-success btn">NEW GAME</button>
-        <div class = "row">
-          <div class="col-md-6">
-            <h2>Player 1: <span id = "player1Name"><span></h2>
-              <button id="player1-roll" class="btn-success btn">Roll</button>
-              <button id="player1-hold" class="btn-success btn">Hold</button>
-            <h2>Dice Roll: <span id="die-roll-1"></span></h2>
-            <p>Round Total: <span id="round-total-1"></span></p>
-            <p>Total Score: <span id="total-score-1"></span></p>
-          </div>
+             </div>
+              <div class="form-group col-md-3">
+                <label for="player-one">pLayer One</label> <br>
+                <input class="form-control" id="player-one" type="text" name="player-one" value="">
+              </div>
+              <div class="form-group col-md-3">
+                <label for="player-two">pLayer Two</label> <br>
+                <input class="form-control" id="player-two" type="text" name="player-one" value="">
+              </div>
+              <div class="col-md-3">
 
-        <div class="col-md-6">
-          <h2>Player 2: <span id = "player2Name"><span></h2>
-            <button id="player2-roll" class="btn-success btn">Roll</button>
-            <button id="player2-hold" class="btn-success btn">Hold</button>
-            <h2>Dice Roll: <span id="die-roll-2"></span></h2>
-            <p>Round Total: <span id="round-total-2"></span></p>
-            <p>Total Score: <span id="total-score-2"></span></p>
-        </div>
-        </div>
-      </div>
-      <p id="demo"></p>
-     
+              </div>
+              
+           </div><!--End div row -->
+           <button id="start" type="submit" name="button" class="btn bg-info">START!</button>
+         </form>
+       </div>  <!--End login -->
 
+       <div class="pig-game">
+         <button id="restart" type="button" name="button" onclick="reload();" class="btn bg-info">RESTART</button>
+         <div class="row">
+           <div class="col-md-4">
+             <div class="player-name">
+               <p>pLayer One</p>
+               <p class="player-one-name"> <span><img class="one-turn check" src="https://github.com/nignanthomas/pig-dice/blob/master/images/turn.png?raw=true" alt="My Turn"></span> </p>
+             </div>
+             <div class="player-score">
+               <p><span class="player-one-score">0</span> </p>
+             </div>
+           </div> <!--End div col player-one -->
 
-  </body>
-</html>
+           <div class="col-md-4 dice-img">
+
+             <div class="round-total">
+               <p>Round Total: <span id="round-total"></span> </p>
+               <button id="roll" type="button" name="button" class="btn bg-success">Roll</button>
+               <button id="hold" type="button" name="button" class="btn bg-danger">Hold</button>
+             </div>
+           </div> <!--End div dice -->
+
+           <div class="col-md-4">
+             <div class="player-name">
+               <p>pLayer Two</p>
+               <p class="player-two-name"> <span><img class="two-turn check" src="https://github.com/nignanthomas/pig-dice/blob/master/images/turn.png?raw=true" alt="My Turn"></span> </p>
+             </div>
+             <div class="player-score">
+               <p><span class="player-two-score">0</span> </p>
+             </div>
+           </div><!--End div col player-one -->
+         </div> <!--End div row -->
+
+       </div> <!--End div pig-game -->
+
+     </div> <!--End div container -->
+     <p class="copyright">Copyright© 2018 <span class="copyname">Nicole Ha</span> <img src="http://gif-animation.leovacity.be/images/dancing-delfine-animation-gif.gif" alt="rolling cat"> </p>
+    </body>
+  </html>
