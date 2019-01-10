@@ -1,7 +1,16 @@
 .player-console {
     display: none;
   }
-  @keyframes example {
+  #demo{text-align:center;
+  font-size:30px;
+font-family:monospace;
+padding:100px;}
+
+#temo{text-align:center;
+  font-size:70px;
+font-family:monospace;
+padding:100px;}
+  /* @keyframes example {
     0%   {background-color: red;}
     25%  {background-color: yellow;}
     50%  {background-color: blue;}
@@ -9,11 +18,11 @@
   }
   
   /* The element to apply the animation to */
-  body{
+  /* body{
     width: 100px;
     height: 100px;
     background-color: red;
     animation-name: example;
     animation-duration: 4s;
   }
-  .player-console{font-size:50px;}
+  .player-console{font-size:50px;} */ 

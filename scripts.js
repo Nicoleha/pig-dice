@@ -30,7 +30,7 @@ Player.prototype.hold = function () {
   this.totalscore += this.tempscore;
   this.tempscore = 0;
   // this.changeturn();
-  alert(this.playerName + ", your turn is over, pass the mouse!");
+  document.getElementById("demo").innerHTML=  this.playerName + ", your turn is over, pass the mouse!";
 }
 
 // // changing turn
@@ -44,7 +44,7 @@ Player.prototype.hold = function () {
 // check for 100
 Player.prototype.winnerCheck = function () {
   if (this.totalscore >= 20) {
-    alert(this.playerName + " You are the winner!");
+    document.getElementById("temo").innerHTML= this.playerName + " You are the winner!";
   }
 }
 
@@ -55,7 +55,7 @@ Player.prototype.newGame = function () {
   this.totalscore = 0;
   this.playerName ="";
 }
-
+// Clear inputted name
 var clearValues = function(){
   $(".player1Name").val("");
   $(".player2Name").val("");
