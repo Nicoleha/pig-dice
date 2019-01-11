@@ -49,7 +49,7 @@ var turnPlayer = function(){
 
 // function Winner
 var winner = function(){
-  if (playerOne.score >= 20){
+  if (playerOne.score >= 100){
     $(".dice-img").text("Woollahh" + " "+ playerOne.name + "  WINS !!!")
     swal({
       title: playerOne.name +" "+ "  WINS !",
@@ -58,7 +58,7 @@ var winner = function(){
     });
     $("#roll").prop("disabled", true);
     $("#hold").prop("disabled", true);
-  } else if (playerTwo.score >= 20){
+  } else if (playerTwo.score >= 100){
     $(".dice-img").text("Woollahh" + " " + playerTwo.name + "  WINS !")
     swal({
       title: playerTwo.name +" " + "  WINS ",

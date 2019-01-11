@@ -133,3 +133,7 @@ font-weight: bolder;
 padding-bottom: 30px;}
 .two-turn , .one-turn{width: 45px;
 height: 40px;}
+.swal-text{
+  font-family:monospace;
+  color:rgb(31, 18, 18);
+}
