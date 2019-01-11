@@ -46,18 +46,18 @@ var turnPlayer = function(){
 // function Winner
 var winner = function(){
   if (playerOne.score >= 20){
-    $(".dice-img").text("!!!" + playerOne.name + "  WINS !!!")
+    $(".dice-img").text("Woollahh" + " "+ playerOne.name + "  WINS !!!")
     swal({
-      title: "Woollahh" + " "+playerOne.name + "  WINS !!!",
+      title: playerOne.name +" "+ "  WINS !",
       icon: "success",
       button: "OK!",
     });
     $("#roll").prop("disabled", true);
     $("#hold").prop("disabled", true);
   } else if (playerTwo.score >= 20){
-    $(".dice-img").text("Woollahh" + " " + playerTwo.name + "  WINS !!!")
+    $(".dice-img").text("Woollahh" + " " + playerTwo.name + "  WINS !")
     swal({
-      title: "!!!" + playerTwo.name + "  WINS !!!",
+      title: playerTwo.name +" " + "  WINS ",
       icon: "success",
       button: "OK!",
     });
