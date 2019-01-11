@@ -11,29 +11,48 @@ Players throw a dice and scores as many points as the total shown on the dice pr
 Quiz board website can be view on mobile or computer and with ease and it is made for easy learning.
 ## BDD(Behavior-Driven Development)
 ### (SPECs)The following is what my program should handle:
-It can determine if the provided answer is correct or wrong
 
-#### Example Intput : 
-correctly answered questions 
- ##### Output:
- 1 per correct answer
+#### Behavior :
+ Player 1 inputs name and Player 2 inputs name, and clicks start button
+##### Input:
+Player 1: Nicole/ Player 2: Anabella/ Click START
+##### Output:
+Goes to game console
+ 
+ #### Behavior : 
+ Player 1 clicks ROLL button
+##### Input:
+Click ROLL button
+##### Output:
+Dice rolls and number is generated
 
-#### Example Input : 
-not answered questions
-#####  Output:
-0 (No mark awarded)
+#### Behavior :
+ If Player 1 rolls any number other than 1, that roll is added to round total
+##### Input:
+Roll = 4
+##### Output:
+Round total = 4
 
-#### Example Input:
-Wrong answer questions
-##### Output
-0 (Mark not awarded)
+#### Behavior :
+ If Player 1 rolls a 1, no score is added and round for Player 1 ends
+##### Input:
+Roll = 1
+##### Output:
+Round total = 0 / Total score = 0 / Player 2 begins
 
-##### Total marks to be awwarded must be 20 amrks
-20/20
+#### Behavior : 
+Repeat for Player 2
+##### Input:
+Roll = 1
+##### Output:
+Round total = 0 / Total score = 0 / Player 1 begins
 
-#### Other behaviors:
-* Answering all the qusetions is required
-* After submit the user must get results
+#### Behavior : 
+When a player's total score reaches 100 or more, game ends and winner page shows
+##### Input:
+Player 1 or 2 gets total score = 100
+##### Output:
+Winner page
 
 
 ## Known Bugs
