@@ -14,13 +14,20 @@ body {
 }
 
 h2>img {
-  height: 100px;
-  width: 100px;
+  height: 80px;
+  width: 80px;
 }
 #help {
   border-radius: 10px;
   float: right;
+  color:rgb(236, 219, 219);
+  background-color: rgb(107, 86, 128);
+  padding: 17px;
+  font-family: monospace;
 }
+#help:hover{color:rgb(190, 176, 176);
+  background-color: rgb(95, 81, 109);
+  padding: 23px;}
 
 .login {
   text-align: center;
@@ -48,6 +55,8 @@ h2>img {
   margin:0 auto;
   font-family: 'Satisfy', cursive;
   padding: 18px;
+  background-color: aqua;
+  font-size:20px;
 }
 
 .pig-game {
@@ -56,10 +65,10 @@ h2>img {
 
 .dice-img img {
   margin-top: 20px;
-  height: 100px;
-  width: 100px;
-  border: 2px solid black;
-  border-radius: 15%;
+  height: 80px;
+  width: 80px;
+  border: 2px solid rgb(22, 20, 20);
+  border-radius: 10%;
 }
 
 .check {
@@ -71,7 +80,7 @@ h2>img {
   font-family: Inconsolata;
   font-weight: bold;
   text-align: center;
-  border: 3px solid black;
+  border: 3px dotted rgb(85, 68, 68);
   height: 250px;
   border-radius: 10%;
   margin: 0 auto;
@@ -91,7 +100,7 @@ h2>img {
 
 .player-score {
   font-size: 500%;
-  color: red;
+  color: rgb(228, 65, 65);
 }
 
 #restart {
@@ -99,6 +108,8 @@ h2>img {
   margin:0 auto;
   padding: 18px;
   font-family: 'Satisfy', cursive;
+  font-size:20px;
+  background-color: aqua;
 }
 
 .copyright {
@@ -120,3 +131,5 @@ p > img {
 .login h5{font-family:monospace;
 font-weight: bolder;
 padding-bottom: 30px;}
+.two-turn , .one-turn{width: 45px;
+height: 40px;}
