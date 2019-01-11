@@ -9,9 +9,7 @@ var Player = function(name, score, status){
 Player.prototype.scorePlus = function(){
   this.score += roundTotal;
 }
-Player.prototype.one =function(){
-  return alert("You rolled one, your initial scorre is easy")
-}
+
 var playerOne = {};
 var playerTwo = {};
 
@@ -23,12 +21,14 @@ var roll = function(){
   $("#new-dice").remove();
   $(".dice-img").prepend("<img id='new-dice' src='images/dice"+rolled+".png' alt='Dice "+rolled+"'>");
   if (rolled != 1){
-    one();
-    roundTotal += rolled
-    
-  } else {
+   roundTotal += rolled
+    } else {
     roundTotal = 0;
     turnPlayer();
+    swal({
+      title: "you rolled a one",
+      button: "OK!",
+    });
   }
 }
 
