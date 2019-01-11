@@ -83,10 +83,11 @@ h2>img {
   text-align: center;
   border: 3px dotted rgb(85, 68, 68);
   height: 250px;
-  border-radius: 10%;
+  border-radius: 1%;
   margin: 0 auto;
   padding-left: -25px;
   padding-right: -25px;
+
 }
 
 .dice-img {
@@ -138,3 +139,5 @@ height: 40px;}
   font-family:monospace;
   color:rgb(31, 18, 18);
 }
+#roll , #hold{padding:30px;
+font-weight:bolder;}
