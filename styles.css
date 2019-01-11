@@ -55,7 +55,7 @@ h2>img {
   margin:0 auto;
   font-family: 'Satisfy', cursive;
   padding: 18px;
-  background-color: aqua;
+  background-color:rgb(236, 219, 219) ;
   font-size:20px;
 }
 
@@ -109,7 +109,7 @@ h2>img {
   padding: 18px;
   font-family: 'Satisfy', cursive;
   font-size:20px;
-  background-color: aqua;
+  background-color:rgb(236, 219, 219) ;
 }
 
 .copyright {
@@ -133,3 +133,10 @@ font-weight: bolder;
 padding-bottom: 30px;}
 .two-turn , .one-turn{width: 45px;
 height: 40px;}
+.swal{
+  margin: 0px;
+  font-size: 25px;
+  box-shadow: 0px 1px 1px rgb(211, 170, 170);
+  margin-bottom: 28px;
+  color:red;
+}

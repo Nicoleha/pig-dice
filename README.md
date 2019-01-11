@@ -56,7 +56,7 @@ Winner page
 
 
 ## Known Bugs
-All safe , no bugs will be encoutered on my quiz board website. But in case it is unfortunately encountered kindly reach out.
+All safe , no bugs will be encoutered when playing this game. But in case it is unfortunately encountered kindly reach out.
 ## Technologies Used
 In making the pid dice game website is mainly  used javascript,html,css and jquery to handle my program.
 I also used ubuntu software and visual studio code to write my code and used github to push my repository and host the website. 
