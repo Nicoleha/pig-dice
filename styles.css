@@ -1,5 +1,5 @@
 body {
-  background-image: url("https://images.pexels.com/photos/707590/pexels-photo-707590.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  background-image: url("https://images.pexels.com/photos/9660/business-money-pink-coins.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500");
   background-size: cover;
 }
 
@@ -81,9 +81,9 @@ h2>img {
   font-family: Inconsolata;
   font-weight: bold;
   text-align: center;
-  border: 3px dotted rgb(85, 68, 68);
-  height: 250px;
-  border-radius: 1%;
+  border: 2px dotted gold;
+  height: 230px;
+  border-radius: 5%;
   margin: 0 auto;
   padding-left: -25px;
   padding-right: -25px;
@@ -102,7 +102,7 @@ h2>img {
 
 .player-score {
   font-size: 500%;
-  color: rgb(214, 81, 81);
+  color: salmon;
 }
 
 #restart {
@@ -119,6 +119,8 @@ h2>img {
   justify-content: center;
   width: 100%;
   margin-top: 400px;
+  color:gold;
+  font-weight:bolder;
 }
 
 .copyname {
@@ -139,5 +141,10 @@ height: 40px;}
   font-family:monospace;
   color:rgb(31, 18, 18);
 }
-#roll , #hold{padding:30px;
-font-weight:bolder;}
+#roll {padding:30px;
+  font-weight:bolder;
+background-color:gold;}
+  
+#hold{padding:30px;
+font-weight:bolder;
+background-color:salmon;}

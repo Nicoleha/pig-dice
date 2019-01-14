@@ -26,7 +26,7 @@ var roll = function(){
     roundTotal = 0;
     turnPlayer();
     swal({
-     text:"You rolled a 1, your turn is over, you lose all points accumulated in this turn.Pass the die to the next player.",
+     text:"Oooops, You rolled a 1, your turn is over, you lose all points accumulated in this turn.Pass the die to the next player.",
       button: "OK!",
     });
   }
